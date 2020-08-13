@@ -91,18 +91,20 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-spec.subspec 'Extensions' do |ss|
-  ss.source_files  = "Source/Extensions/*.swift"  #,  "Source/Extensions", "Source/Pickers" # "Source/Extensions/*.{h,m}"
-end
-spec.subspec 'Pickers' do |ss|
-  ss.source_files  = "Source/Pickers/*.swift"  #,  "Source/Extensions", "Source/Pickers" # "Source/Extensions/*.{h,m}"
-end
-spec.subspec 'Viewers' do |ss|
-  ss.source_files  = "Source/Viewers/*.swift"  #,  "Source/Extensions", "Source/Pickers" # "Source/Extensions/*.{h,m}"
-end
-spec.subspec 'Views' do |ss|
-  ss.source_files  = "Source/Views/*.swift"  #,  "Source/Extensions", "Source/Pickers" # "Source/Extensions/*.{h,m}"
-end
+  spec.source_files  = "Source/**/*.swift"  #,  "Source/Extensions", "Source/Pickers" # "Source/Extensions/*.{h,m}"
+
+#spec.subspec 'Extensions' do |ss|
+#  ss.source_files  = "Source/Extensions/*.swift"  #,  "Source/Extensions", "Source/Pickers" # "Source/Extensions/*.{h,m}"
+#end
+#spec.subspec 'Pickers' do |ss|
+#  ss.source_files  = "Source/Pickers/*.swift"  #,  "Source/Extensions", "Source/Pickers" # "Source/Extensions/*.{h,m}"
+#end
+#spec.subspec 'Viewers' do |ss|
+#  ss.source_files  = "Source/Viewers/*.swift"  #,  "Source/Extensions", "Source/Pickers" # "Source/Extensions/*.{h,m}"
+#end
+#spec.subspec 'Views' do |ss|
+#  ss.source_files  = "Source/Views/*.swift"  #,  "Source/Extensions", "Source/Pickers" # "Source/Extensions/*.{h,m}"
+#end
   #spec.exclude_files = "Source/Exclude"
 
   #spec.public_header_files = "Source/**/*.h"
