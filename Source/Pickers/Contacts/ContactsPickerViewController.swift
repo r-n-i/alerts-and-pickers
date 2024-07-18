@@ -158,7 +158,7 @@ final class ContactsPickerViewController: UIViewController {
                 self.checkStatus(completionHandler: completionHandler)
             }
             
-        case .authorized:
+        case .authorized, .limited:
             /// Authorization granted by user for this app.
             DispatchQueue.main.async {
                 self.fetchContacts(completionHandler: completionHandler)
